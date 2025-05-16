@@ -1,6 +1,6 @@
 # Casino invitation
 
-Contenet of this website is entirely generated with AI. Do not use this to judge coding skills.
+Content of this website is entirely generated with AI. Do not use this to judge coding skills.
 
 ## Project Setup
 
