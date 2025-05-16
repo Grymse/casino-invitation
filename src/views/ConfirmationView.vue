@@ -140,7 +140,6 @@ const addToCalendar = () => {
   position: relative;
   font-family: 'Playfair Display', serif;
   color: #ffffff;
-  background-image: url('/casino-background.svg');
   background-size: cover;
   background-position: center;
   padding: 0;
