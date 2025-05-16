@@ -7,7 +7,7 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style>
-/* Reset and base styles */
+/* App-specific styles */
 *,
 *::before,
 *::after {
@@ -17,22 +17,39 @@ import { RouterView } from 'vue-router'
 }
 
 body {
-  background: url('/casino-background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #ffffff;
+  background-color: var(--vt-c-black);
+  color: var(--vt-c-text-dark-1);
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-a {
-  color: #d4af37;
-  transition: color 0.3s;
+/* Elegant gold accents */
+::selection {
+  background-color: rgba(212, 175, 55, 0.3);
+  color: var(--gold-light);
 }
 
-a:hover {
-  color: #b7953a;
+/* Custom scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vt-c-black-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-primary);
 }
 </style>
