@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#102022" />
+      <stop offset="100%" stop-color="#0e1f15" />
+    </linearGradient>
+    
+    <pattern id="poker-pattern" patternUnits="userSpaceOnUse" width="100" height="100">
+      <rect width="100" height="100" fill="url(#bg-gradient)"/>
+      <path d="M25,25 L50,50 L25,75 L0,50 Z" fill="#d4af37" opacity="0.1"/>
+      <path d="M75,25 L100,50 L75,75 L50,50 Z" fill="#d4af37" opacity="0.1"/>
+    </pattern>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#poker-pattern)"/>
+  
+  <!-- Card suit symbols with glow -->
+  <g filter="url(#glow)" opacity="0.6">
+    <text x="20%" y="30%" font-family="serif" font-size="80" fill="#d4af37" text-anchor="middle">♠</text>
+    <text x="80%" y="30%" font-family="serif" font-size="100" fill="#d4af37" text-anchor="middle">♣</text>
+    <text x="30%" y="70%" font-family="serif" font-size="120" fill="#b22222" text-anchor="middle">♥</text>
+    <text x="70%" y="70%" font-family="serif" font-size="90" fill="#b22222" text-anchor="middle">♦</text>
+  </g>
+  
+  <!-- Poker chips -->
+  <g transform="translate(100, 400)">
+    <circle cx="0" cy="0" r="30" fill="#b22222" stroke="#d4af37" stroke-width="3"/>
+    <circle cx="0" cy="0" r="25" fill="#b22222" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="0" cy="0" r="18" fill="#b22222" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(1100, 200)">
+    <circle cx="0" cy="0" r="40" fill="#1b1b1b" stroke="#d4af37" stroke-width="3"/>
+    <circle cx="0" cy="0" r="35" fill="#1b1b1b" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="0" cy="0" r="25" fill="#1b1b1b" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(950, 600)">
+    <circle cx="0" cy="0" r="35" fill="#115740" stroke="#d4af37" stroke-width="3"/>
+    <circle cx="0" cy="0" r="30" fill="#115740" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="0" cy="0" r="22" fill="#115740" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  
+  <!-- Playing cards -->
+  <g transform="translate(300, 200) rotate(-15)">
+    <rect x="-30" y="-45" width="60" height="90" rx="5" fill="white" stroke="#333" stroke-width="1"/>
+    <text x="0" y="0" font-family="serif" font-size="30" fill="#b22222" text-anchor="middle">A♥</text>
+  </g>
+  
+  <g transform="translate(850, 300) rotate(10)">
+    <rect x="-30" y="-45" width="60" height="90" rx="5" fill="white" stroke="#333" stroke-width="1"/>
+    <text x="0" y="0" font-family="serif" font-size="30" fill="black" text-anchor="middle">K♠</text>
+  </g>
+</svg>
