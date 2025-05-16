@@ -132,6 +132,13 @@ h2 {
 }
 
 /* Responsive layout */
+@media (max-width: 600px) {
+  #app {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
 @media (min-width: 1024px) {
   body {
     display: flex;
